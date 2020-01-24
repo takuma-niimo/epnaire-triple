@@ -169,32 +169,6 @@ small {
     line-height: .8rem;
 }
 
-/* p.left-desc {
-    float: left;
-    width: 60%;
-} */
-
-/* div.right-image {
-    float: right;
-    width: 35%;
-}
-div.right-image>img {
-    width: 100%;
-} */
-
-/* p.right-desc {
-    float: right;
-    width: 60%;
-} */
-
-/* div.left-image {
-    float: left;
-    width: 35%;
-}
-div.left-image>img {
-    width: 100%;
-} */
-
 div.link-to-product {
     text-align: right;
 }
@@ -202,4 +176,8 @@ div.link-to-product a {
     display: inline-block;
     border: 1px solid lightgray;
     padding:.5rem .8rem;
+}
+
+span.under {
+    border-bottom: double 6px #b3f7be;
 }

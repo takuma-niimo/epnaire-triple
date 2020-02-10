@@ -1,6 +1,7 @@
 @import url(nav.css);
 
-#tothetop {
+#page_top {
+  display: none;
   padding: 0;
   border: none;
   background: none;
@@ -17,7 +18,7 @@ button:focus-visible {
   outline: none;
 }
 
-#tothetop img {
+#page_top img {
   width: 100%;
 }
 

@@ -130,15 +130,15 @@ dl.qa-entry>dd>p.caption>span {
 }
 
 dd.point1 {
-    background: url('../img/qa-point1.png') no-repeat left 0 top/100px;
+    background: url('../img/qa/point1.png') no-repeat left 0 top/100px;
 }
 
 dd.point2 {
-    background: url('../img/qa-point2.png') no-repeat left 0 top/100px;
+    background: url('../img/qa/point2.png') no-repeat left 0 top/100px;
 }
 
 dd.point3 {
-    background: url('../img/qa-point3.png') no-repeat left 0 top/100px;
+    background: url('../img/qa/point3.png') no-repeat left 0 top/100px;
 }
 
 .point1, .point2, .point3 {

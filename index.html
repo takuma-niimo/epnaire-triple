@@ -10,18 +10,31 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
 <!-- favicon -->
-<link rel="icon" href="ftpsource/img/favicon.ico" sizes="32x32">
+<link rel="icon" href="img/favicon.ico" sizes="32x32">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="ftpsource/theme/white_pro-master/css/bootstrap.min.css">
+<link rel="stylesheet" href="theme/white_pro-master/css/bootstrap.min.css">
 
 <!-- my style -->
-<link rel="stylesheet" href="ftpsource/css/base.css">
-<link rel="stylesheet" href="ftpsource/css/top.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/top.css">
 
 </head>
 
 <body>
+
+<!-- reaf mark -->
+<svg width="0" height="0" viewBox="0, 0, 26, 26">
+    <g id="reafmark">
+      <path d="M13,6.1L7.4,0.6C6.7,0,5.7-0.2,4.9,0.2C4,0.5,3.5,1.4,3.5,2.3v13.9c0,0.9,0.4,1.8,1.1,2.5l6.9,6.7
+		c0.9,0.9,2.3,0.9,3.2,0l6.9-6.7c0.7-0.7,1.1-1.5,1.1-2.5V2.3c0-0.9-0.6-1.8-1.4-2.1c-0.9-0.4-1.8-0.2-2.5,0.5L13,6.1z M19.3,15.8
+		c0,0.3-0.1,0.6-0.4,0.8L13,22.4V10.6l1.1-1.1l4.2-4c0.2-0.2,0.4-0.2,0.6-0.1c0.2,0.1,0.4,0.3,0.4,0.5V15.8z"></path>
+    </g>
+</svg>
+
+<button id="tothetop">
+  <img src="img/tothetop.png" alt="">
+</button>
 
 <!-- navigation for mobile -->
 <nav class="mobile-header navbar navbar-default navbar-fixed-top container hidden-md hidden-lg">
@@ -52,13 +65,15 @@
 <div id="navArea" class="mobile-header hidden-md hidden-lg">
   <nav>
     <h2>
-      <img src="ftpsource/img/sp/logo.png" alt="">
+      <img src="img/sp/logo.png" alt="">
     </h2>
     <div class="inner">
       <ul>
         <li><a href="https://shopping.geocities.jp/ep-naire/"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html"><i class="fas fa-list-ul"></i>商品一覧</a></li>
         <li><a href="content/question.html"><i class="far fa-question-circle"></i>表札Q&amp;A</a></li>
-        <li><a href="#"><i class="fas fa-image"></i>表札ギャラリー</a></li>
+        <li><a href="content/gallery.html"><i class="fas fa-image"></i>制作事例</a></li>
+        <li><a href="#"><svg class="i" viewBox="0, 0, 26, 26"><use xlink:href="#reafmark"></use></svg>購入の流れ</a></li>
         <li><a href="https://shopping.yahoo.co.jp/my/wishlist/add/?store_id=ep-naire&.crumb=EXjl.6IVgpK"><i class="far fa-star"></i>お気に入りショップに登録</a></li>
         <li><a href="https://store.shopping.yahoo.co.jp/ep-naire/guide.html"><i class="fas fa-shopping-bag"></i>お買い物ガイド</a></li>
         <li><a href="https://order.shopping.yahoo.co.jp/cgi-bin/cart-form?catalog=ep-naire"><i class="fas fa-shopping-cart"></i>お買い物かご</a></li>
@@ -96,7 +111,7 @@
 <nav class="pc-header navbar-fixed-top hidden-xs hidden-sm">
   <div class="navbar-1st">
     <div class="navbar-left">
-      <img src="ftpsource/img/pc/niimo-logo2.png" alt="">
+      <img src="img/pc/niimo-logo2.png" alt="">
       <h1>表札・看板</h1><span>by NiiMo</span>
     </div>
     <div class="navbar-right">
@@ -117,14 +132,20 @@
       </div>
     </div>
   </div>
+
   <div class="navbar-2nd">
     <div class="container">
       <div class="row">
-        <div class="col-md-1"></div>
         <div class="col-md-2"><a href="https://shopping.geocities.jp/ep-naire/"><i class="fas fa-home"></i><p>HOME</p></a></div>
-        <div class="col-md-2"><a href="https://store.shopping.yahoo.co.jp/niimo/search.html"><i class="fas fa-list-ul"></i><p>商品一覧</p></a></div>
+        <div class="col-md-2"><a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html"><i class="fas fa-list-ul"></i><p>商品一覧</p></a></div>
         <div class="col-md-2"><a href="content/question.html"><i class="far fa-question-circle"></i><p>表札Q&amp;A</p></a></div>
-        <div class="col-md-2"><a href="#"><i class="fas fa-image"></i><p>表札ギャラリー</p></a></div>
+        <div class="col-md-2"><a href="content/gallery.html"><i class="fas fa-image"></i><p>制作事例</p></a></div>
+
+        <div class="col-md-2"><a href="#">
+          <svg class="i" viewBox="0, 0, 26, 26"><use xlink:href="#reafmark"></use></svg>
+          <p>購入の流れ</p></a>
+        </div>
+
         <div class="col-md-2"><a href="https://inform.shopping.yahoo.co.jp/ep-naire/contact.html"><i class="far fa-envelope"></i><p>お問い合わせ</p></a></div>
         <div class="col-md-1"></div>
       </div>
@@ -135,8 +156,10 @@
 <div class="content-wrap">
 
 <div class="keyvisual">
-  <img class="img-responsive hidden-md hidden-lg" src="ftpsource/img/sp/keyvisual-sp.png" alt="">
-  <img class="img-responsive hidden-xs hidden-sm" src="ftpsource/img/pc/keyvisual-pc.png" alt="">
+  <img class="img-responsive hidden-md hidden-lg" src="img/sp/keyvisual-sp.jpg" alt="">
+  <img class="img-responsive hidden-xs hidden-sm" src="img/pc/keyvisual-pc.jpg" alt="">
+  <p class="hidden-xs hidden-sm">私たちは、森を守るため<br>間伐材を使用した製品作りに取り組んでいます。</p>
+  <p class="hidden-md hidden-lg">私たちは、森を守るため<br>間伐材を使用した<br>製品作りに取り組んでいます。</p>
 </div>
 
 <div class="category-unit container">
@@ -145,7 +168,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/sozai-buna.png" alt="">
           <h5 class="card-title">雪国ブナ</h5>
           <p class="card-text">Snow beech</p>
         </div>
@@ -155,7 +178,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-keyaki.png" alt="">
+          <img src="img/sp/sozai-keyaki.png" alt="">
           <h5 class="card-title">欅</h5>
           <p class="card-text">Keyaki</p>
         </div>
@@ -165,19 +188,9 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
+          <img src="img/sp/sozai-sugi.png" alt="">
           <h5 class="card-title">越後杉</h5>
-          <p class="card-text">Echigo Cedar</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card col-md-3 col-sm-4 col-xs-6">
-      <a href="#">
-        <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
-          <h5 class="card-title">More...</h5>
-          <p class="card-text">何があるかな</p>
+          <p class="card-text">Echigo's Cedar</p>
         </div>
       </a>
     </div>
@@ -190,7 +203,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/sozai-buna.png" alt="">
           <h5 class="card-title">正方形</h5>
           <p class="card-text">Square</p>
         </div>
@@ -200,7 +213,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-keyaki.png" alt="">
+          <img src="img/sp/sozai-keyaki.png" alt="">
           <h5 class="card-title">長方形（縦）</h5>
           <p class="card-text">Vertical</p>
         </div>
@@ -210,7 +223,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
+          <img src="img/sp/sozai-sugi.png" alt="">
           <h5 class="card-title">長方形（横）</h5>
           <p class="card-text">Horizontal</p>
         </div>
@@ -225,7 +238,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/usage-wall.png" alt="">
           <h5 class="card-title">壁掛け</h5>
           <p class="card-text">Wall hanging</p>
         </div>
@@ -235,7 +248,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
+          <img src="img/sp/usage-poll.png" alt="">
           <h5 class="card-title">柱掛け</h5>
           <p class="card-text">Pole hanging</p>
         </div>
@@ -250,7 +263,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/sozai-buna.png" alt="">
           <h5 class="card-title">墨入れ</h5>
           <p class="card-text">Inking</p>
         </div>
@@ -260,7 +273,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/sozai-buna.png" alt="">
           <h5 class="card-title">家紋追加</h5>
           <p class="card-text">Family crest</p>
         </div>
@@ -270,7 +283,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/sozai-buna.png" alt="">
           <h5 class="card-title">二世帯・行追加</h5>
           <p class="card-text">Add row</p>
         </div>
@@ -280,7 +293,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
+          <img src="img/sp/sozai-sugi.png" alt="">
           <h5 class="card-title">イニシャルデザイン</h5>
           <p class="card-text">Initial design</p>
         </div>
@@ -295,9 +308,9 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
-          <h5 class="card-title">雪国ブナ+墨入れ</h5>
-          <p class="card-text">Inking Snow beech</p>
+          <img src="img/sp/sozai-buna.png" alt="">
+          <h5 class="card-title">雪国ブナ</h5>
+          <p class="card-text">Snow beech</p>
         </div>
       </a>
     </div>
@@ -305,7 +318,71 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/sozai-buna.png" alt="">
+          <h5 class="card-title">欅</h5>
+        <p class="card-text">Keyaki</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card col-md-3 col-sm-4 col-xs-6">
+      <a href="#">
+        <div class="card-inner">
+          <img src="img/sp/sozai-buna.png" alt="">
+          <h5 class="card-title">越後杉</h5>
+          <p class="card-text">Echigo's Cedar</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card col-md-3 col-sm-4 col-xs-6 hidden-md hidden-lg">
+      <a href="#">
+        <div class="card-inner">
+          <img src="img/sp/sozai-sugi.png" alt="">
+          <h5 class="card-title">イニシャルデザイン</h5>
+          <p class="card-text">Initial design</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card col-md-3 col-sm-4 col-xs-6 hidden-md hidden-lg">
+      <a href="#">
+        <div class="card-inner">
+          <img src="img/sp/sozai-sugi.png" alt="">
+          <h5 class="card-title">アルファベットのみ</h5>
+          <p class="card-text">Alphabet only</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card col-md-3 col-sm-4 col-xs-6 more">
+      <a href="#">
+        <div class="card-inner">
+          <img src="img/next.jpg" alt="">
+          <h5 class="card-title">もっと見る</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="category-unit container">
+  <div class="title"><i class="fas fa-sort-down"></i>その他商品</div>
+  <div class="row">
+    <div class="card col-md-3 col-sm-4 col-xs-6">
+      <a href="#">
+        <div class="card-inner">
+          <img src="img/sp/eoil.png" alt="">
+          <h5 class="card-title">墨入れ</h5>
+          <p class="card-text">Inking</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card col-md-3 col-sm-4 col-xs-6">
+      <a href="#">
+        <div class="card-inner">
+          <img src="img/sp/rollcraft.png" alt="">
           <h5 class="card-title">家紋追加</h5>
           <p class="card-text">Family crest</p>
         </div>
@@ -315,39 +392,38 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-buna.png" alt="">
+          <img src="img/sp/eoil.png" alt="">
           <h5 class="card-title">二世帯・行追加</h5>
           <p class="card-text">Add row</p>
         </div>
       </a>
     </div>
 
-    <div class="card col-md-3 col-sm-4 col-xs-6">
+    <div class="card col-md-3 col-sm-4 col-xs-6 hidden-md hidden-lg">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
+          <img src="img/sp/rollcraft.png" alt="">
           <h5 class="card-title">イニシャルデザイン</h5>
           <p class="card-text">Initial design</p>
         </div>
       </a>
     </div>
 
-    <div class="card col-md-3 col-sm-4 col-xs-6">
+    <div class="card col-md-3 col-sm-4 col-xs-6 hidden-md hidden-lg">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
-          <h5 class="card-title">アルファベットのみ</h5>
-          <p class="card-text">Alphabet only</p>
+          <img src="img/sp/eoil.png" alt="">
+          <h5 class="card-title">二世帯・行追加</h5>
+          <p class="card-text">Add row</p>
         </div>
       </a>
     </div>
 
-    <div class="card col-md-3 col-sm-4 col-xs-6">
-      <a href="#">
+    <div class="card col-md-3 col-sm-4 col-xs-6 more">
+      <a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/sozai-sugi.png" alt="">
-          <h5 class="card-title">墨入れ+行追加</h5>
-          <p class="card-text">Inking + Add row</p>
+          <img src="img/next.jpg" alt="">
+          <h5 class="card-title">もっと見る</h5>
         </div>
       </a>
     </div>
@@ -357,16 +433,16 @@
 <div class="container">
   <div class="row">
     <div class="corner-card col-xs-6 col-md-3">
-      <a href="content/question.html"><img src="ftpsource/img/sp/corner-qa.png" alt=""></a>
+      <a href="content/question.html"><img src="img/sp/corner-qa.png" alt=""></a>
     </div>
     <div class="corner-card col-xs-6 col-md-3">
-      <a href="https://store.shopping.yahoo.co.jp/ep-naire/guide.html#souryou"><img src="ftpsource/img/sp/souryou-banner.png" alt=""></a>
+      <a href="https://store.shopping.yahoo.co.jp/ep-naire/guide.html#souryou"><img src="img/sp/souryou-banner.png" alt=""></a>
     </div>
     <div class="corner-card col-xs-6 col-md-3">
-      <a href="https://store.shopping.yahoo.co.jp/ep-naire/guide.html#henpin"><img src="ftpsource/img/sp/henpin-banner.png" alt=""></a>
+      <a href="https://store.shopping.yahoo.co.jp/ep-naire/guide.html#henpin"><img src="img/sp/henpin-banner.png" alt=""></a>
     </div>
     <div class="corner-card col-xs-6 col-md-3">
-      <a href="https://inform.shopping.yahoo.co.jp/ep-naire/contact.html"><img src="ftpsource/img/sp/toiawase-banner.png" alt=""></a>
+      <a href="https://inform.shopping.yahoo.co.jp/ep-naire/contact.html"><img src="img/sp/toiawase-banner.png" alt=""></a>
     </div>
   </div>
 </div>
@@ -377,7 +453,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="https://shopping.geocities.jp/niimo/">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/shop-mizunara.png" alt="">
+          <img src="img/sp/shop-mizunara.png" alt="">
           <h5 class="card-title">ミズナラスティック店</h5>
           <p class="card-text">MISUNARA shop</p>
         </div>
@@ -387,7 +463,7 @@
     <div class="card col-md-3 col-sm-4 col-xs-6">
       <a href="#">
         <div class="card-inner">
-          <img src="ftpsource/img/sp/shop-outlet.png" alt="">
+          <img src="img/sp/shop-outlet.png" alt="">
           <h5 class="card-title">アウトレット店</h5>
           <p class="card-text">Outlet shop</p>
         </div>
@@ -399,6 +475,24 @@
 </div> <!-- .content-wrap -->
 
 <footer>
+  <div class="contact contain">
+    <h3>NiiMo～新潟モノづくり～</h3>
+    <div class="row">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-5">
+        <p><i class="far fa-clock"></i>09:30～17:00</p>
+        <p><i class="fas fa-phone"></i>025-788-0365</p>
+        <!-- <p><small>※土日祝はお休みをいただきます</small></p> -->
+      </div>
+      <div class="col-xs-5">
+        <a href="https://inform.shopping.yahoo.co.jp/niimo/contact.html" target="_blank">
+          <button class="btn btn-success">お問い合わせ</button>
+        </a>
+      </div>
+      <div class="col-xs-1"></div>
+    </div>
+  </div>
+
   <div class="footer-sp hidden-md hidden-lg">
     <a href="#">
       <div class="footer-part">
@@ -424,7 +518,7 @@
       </div>
     </a>
 
-    <a href="https://store.shopping.yahoo.co.jp/niimo/search.html">
+    <a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html">
       <div class="footer-part">
         <i class="fas fa-chevron-right"></i>商品一覧
       </div>
@@ -435,6 +529,10 @@
         <i class="fas fa-chevron-right"></i>お買い物かご
       </div>
     </a>
+
+    <div class="copyright">
+      <p>Copyright &copy; 2020 NiiMo All Right Reserved.</p>
+    </div>
   </div>
 
   <div class="footer-pc hidden-xs hidden-sm">
@@ -457,7 +555,7 @@
         </div>
 
         <div class="col-md-2">
-          <a href="https://store.shopping.yahoo.co.jp/niimo/search.html"><i class="fas fa-list-ul"></i>商品一覧</a>
+          <a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html"><i class="fas fa-list-ul"></i>商品一覧</a>
         </div>
 
         <div class="col-md-2">
@@ -465,19 +563,27 @@
         </div>
       </div>
     </div>
+
+    <div class="copyright">
+      <p>Copyright &copy; 2020 NiiMo All Right Reserved.</p>
+    </div>
   </div>
 
-  <div class="copyright">
-    <p>Copyright &copy; 2020 NiiMo All Right Reserved.</p>
-  </div>
 </footer>
 
 <!-- bootstrap theme -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="ftpsource/theme/white_pro-master/js/bootstrap.min.js"></script>
+<script src="theme/white_pro-master/js/bootstrap.min.js"></script>
 
 <!-- hamburger navigation -->
-<script src="ftpsource/js/nav.js"></script>
+<script src="js/nav.js"></script>
+
+<!-- smooth scroll -->
+<script src="js/smooth.js"></script>
+
+<!-- to top -->
+<script src="js/scrolltotop.js"></script>
+
 </body>
 </html>

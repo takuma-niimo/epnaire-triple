@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <title>【Yahoo!ショッピング】新潟モノづくり製造所～NiiMo～[よくある質問]</title>
-<link rel="icon" href="img/cropped-logo-1-32x32.png" sizes="32x32">
+<!-- <link rel="icon" href="img/cropped-logo-1-32x32.png" sizes="32x32"> -->
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,18 +22,28 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
 <!-- favicon -->
-<link rel="icon" href="../ftpsource/img/favicon.ico" sizes="32x32">
+<link rel="icon" href="../img/favicon.ico" sizes="32x32">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="../ftpsource/theme/white_pro-master/css/bootstrap.min.css">
+<link rel="stylesheet" href="../theme/white_pro-master/css/bootstrap.min.css">
 
 <!-- my style -->
 <link rel="stylesheet" href="css/qa.css">
-<link rel="stylesheet" href="../ftpsource/css/base.css">
-<link rel="stylesheet" href="../ftpsource/css/top.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/top.css">
 </head>
 
 <body>
+
+<!-- reaf mark -->
+<svg width="0" height="0" viewBox="0, 0, 26, 26">
+    <g id="reafmark">
+      <path d="M13,6.1L7.4,0.6C6.7,0,5.7-0.2,4.9,0.2C4,0.5,3.5,1.4,3.5,2.3v13.9c0,0.9,0.4,1.8,1.1,2.5l6.9,6.7
+		c0.9,0.9,2.3,0.9,3.2,0l6.9-6.7c0.7-0.7,1.1-1.5,1.1-2.5V2.3c0-0.9-0.6-1.8-1.4-2.1c-0.9-0.4-1.8-0.2-2.5,0.5L13,6.1z M19.3,15.8
+		c0,0.3-0.1,0.6-0.4,0.8L13,22.4V10.6l1.1-1.1l4.2-4c0.2-0.2,0.4-0.2,0.6-0.1c0.2,0.1,0.4,0.3,0.4,0.5V15.8z"></path>
+    </g>
+</svg>
+
 <!-- navigation for mobile -->
 <nav class="mobile-header navbar navbar-default navbar-fixed-top container hidden-md hidden-lg">
   <div class="row">
@@ -63,13 +73,15 @@
 <div id="navArea" class="mobile-header hidden-md hidden-lg">
   <nav>
     <h2>
-      <img src="../ftpsource/img/sp/logo.png" alt="">
+      <img src="../img/sp/logo.png" alt="">
     </h2>
     <div class="inner">
       <ul>
         <li><a href="https://shopping.geocities.jp/ep-naire/"><i class="fas fa-home"></i>HOME</a></li>
-        <li><a href="content/question.html"><i class="far fa-question-circle"></i>表札Q&amp;A</a></li>
-        <li><a href="#"><i class="fas fa-image"></i>表札ギャラリー</a></li>
+        <li><a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html"><i class="fas fa-list-ul"></i>商品一覧</a></li>
+        <li><a href="question.html"><i class="far fa-question-circle"></i>表札Q&amp;A</a></li>
+        <li><a href="gallery.html"><i class="fas fa-image"></i>制作事例</a></li>
+        <li><a href="#"><svg class="i" viewBox="0, 0, 26, 26"><use xlink:href="#reafmark"></use></svg>購入の流れ</a></li>
         <li><a href="https://shopping.yahoo.co.jp/my/wishlist/add/?store_id=ep-naire&.crumb=EXjl.6IVgpK"><i class="far fa-star"></i>お気に入りショップに登録</a></li>
         <li><a href="https://store.shopping.yahoo.co.jp/ep-naire/guide.html"><i class="fas fa-shopping-bag"></i>お買い物ガイド</a></li>
         <li><a href="https://order.shopping.yahoo.co.jp/cgi-bin/cart-form?catalog=ep-naire"><i class="fas fa-shopping-cart"></i>お買い物かご</a></li>
@@ -107,7 +119,7 @@
 <nav class="pc-header navbar-fixed-top hidden-xs hidden-sm">
   <div class="navbar-1st">
     <div class="navbar-left">
-      <img src="../ftpsource/img/pc/niimo-logo2.png" alt="">
+      <img src="../img/pc/niimo-logo2.png" alt="">
       <h1>表札・看板</h1><span>by NiiMo</span>
     </div>
     <div class="navbar-right">
@@ -128,14 +140,20 @@
       </div>
     </div>
   </div>
+
   <div class="navbar-2nd">
     <div class="container">
       <div class="row">
-        <div class="col-md-1"></div>
         <div class="col-md-2"><a href="https://shopping.geocities.jp/ep-naire/"><i class="fas fa-home"></i><p>HOME</p></a></div>
-        <div class="col-md-2"><a href="https://store.shopping.yahoo.co.jp/niimo/search.html"><i class="fas fa-list-ul"></i><p>商品一覧</p></a></div>
-        <div class="col-md-2"><a href="content/question.html"><i class="far fa-question-circle"></i><p>表札Q&amp;A</p></a></div>
-        <div class="col-md-2"><a href="#"><i class="fas fa-image"></i><p>表札ギャラリー</p></a></div>
+        <div class="col-md-2"><a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html"><i class="fas fa-list-ul"></i><p>商品一覧</p></a></div>
+        <div class="col-md-2"><a href="question.html"><i class="far fa-question-circle"></i><p>表札Q&amp;A</p></a></div>
+        <div class="col-md-2"><a href="gallery.html"><i class="fas fa-image"></i><p>制作事例</p></a></div>
+
+        <div class="col-md-2"><a href="#">
+          <svg class="i" viewBox="0, 0, 26, 26"><use xlink:href="#reafmark"></use></svg>
+          <p>購入の流れ</p></a>
+        </div>
+
         <div class="col-md-2"><a href="https://inform.shopping.yahoo.co.jp/ep-naire/contact.html"><i class="far fa-envelope"></i><p>お問い合わせ</p></a></div>
         <div class="col-md-1"></div>
       </div>
@@ -144,8 +162,8 @@
 </nav>
 
 <h2 class="_maxwidth">
-  <img class="img-responsive hidden-xs" src="img/qa-top.png" alt="表札のQ&amp;A">
-  <img class="img-responsive hidden-sm hidden-md hidden-lg" src="img/qanda.sptop.jpg" alt="表札のQ&amp;A">
+  <img class="img-responsive hidden-xs" src="img/qa/keyvisual.jpg" alt="表札のQ&amp;A">
+  <img class="img-responsive hidden-sm hidden-md hidden-lg" src="img/qa/keyvisual-sp.jpg" alt="表札のQ&amp;A">
 </h2>
 <p class="_maxwidth first">お客様から寄せられる、よくあるご質問をまとめました。</p>
 
@@ -157,14 +175,14 @@
     <dd class="answer-text">
       名入れのオーダーがない商品ですと、3～7営業日後、出荷予定です。<br>
 表札など名入れのオーダーがある商品は、ご注文～発送まで、このような流れになります。
-      <img src="img/qa-nouki.jpg" alt="発送までの流れ" style="display: block; max-width: 400px; margin: 30px auto;"><br>
+      <img src="img/qa/nouki.jpg" alt="発送までの流れ" style="display: block; max-width: 400px; margin: 30px auto;"><br>
 また墨入れのオプションは、乾燥までに3～4日お時間をいただいております。<br>
 お急ぎのお客様はお時間に余裕を持ってご注文ください。
     </dd>
     <dd class="point1">
       <p class="caption"><span>表札は家の顔！</span></p>
       <div class="dd-image">
-        <img src="img/qa-hyousatsu.jpg" alt="実際に当店の表札を取り付けいただいたイメージです">
+        <img src="img/qa/hyousatsu.jpg" alt="実際に当店の表札を取り付けいただいたイメージです">
         <small class="pc">※お客様から写真を提供していただきました</small>
       </div>
       <p class="description dd-desc">
@@ -198,7 +216,7 @@
     </dd>
     <dd class="point1">
       <p class="caption"><span>天然素材を選ぼう！</span></p>
-      <div class="dd-image"><img src="img/qa-winter.jpg" alt="厳しい積雪の中で丈夫に育った越後杉"></div>
+      <div class="dd-image"><img src="img/qa/winter.jpg" alt="厳しい積雪の中で丈夫に育った越後杉"></div>
       <p class="description dd-desc">
         当店では、新潟の4mを超える厳しい積雪の中でも倒れずに丈夫にまっすぐ育った樹（越後杉、スノービーチ）を使用した、強いエネルギーを持つ木材のみで作り上げた表札を提供しています。
       </p>
@@ -227,7 +245,7 @@
       <p class="caption"><span>最もポピュラーなサイズは実は縁起の良い吉寸だった！</span></p>
       <p class="description">
         昔からよく見かける縦長長方形の一般的なサイズは、考えつくされた吉寸でした。
-        <div><img src="img/qa-kissun.jpg" alt="横88mm,高さ210mm,厚み30mm" style="display: block; max-width: 400px; margin: 30px auto;"></div>
+        <div><img src="img/qa/kissun.jpg" alt="横88mm,高さ210mm,厚み30mm" style="display: block; max-width: 400px; margin: 30px auto;"></div>
         当店は長方形の表札はこのサイズを採用しています。
       </p>
     </dd>
@@ -243,7 +261,7 @@
     </dd>
     <dd class="point3">
       <p class="caption"><span>購入前にデザインの確認ができる！</span></p>
-      <div class="dd-image"><img src="img/qa-kakunin.jpg" alt="デザイン確認は5回まで無料です"></div>
+      <div class="dd-image"><img src="img/qa/kakunin.jpg" alt="デザイン確認は5回まで無料です"></div>
       <p class="description dd-desc">
         当店ではサイズやフォントを数種類ご用意しておりますので、迷われる方もいらっしゃると思います。
         そこで始めたのが、「デザイン確認サービス」。
@@ -257,7 +275,7 @@
     <dd class="point1">
       <p class="caption"><span>オイルでメンテナンスしよう！</span></p>
       <div class="dd-image">
-        <img src="img/qa-oil.jpg" alt="無垢材専用オイルでメンテナンス">
+        <img src="img/qa/oil.jpg" alt="無垢材専用オイルでメンテナンス">
       </div>
       <p class="description dd-desc">
         当店の表札の素材である木材は、しっかり乾燥された木材のみを扱っています。
@@ -299,6 +317,24 @@
 </article>
 
 <footer>
+  <div class="contact contain">
+    <h3>NiiMo～新潟モノづくり～</h3>
+    <div class="row">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-5">
+        <p><i class="far fa-clock"></i>09:30～17:00</p>
+        <p><i class="fas fa-phone"></i>025-788-0365</p>
+        <!-- <p><small>※土日祝はお休みをいただきます</small></p> -->
+      </div>
+      <div class="col-xs-5">
+        <a href="https://inform.shopping.yahoo.co.jp/niimo/contact.html" target="_blank">
+          <button class="btn btn-success">お問い合わせ</button>
+        </a>
+      </div>
+      <div class="col-xs-1"></div>
+    </div>
+  </div>
+
   <div class="footer-sp hidden-md hidden-lg">
     <a href="#">
       <div class="footer-part">
@@ -318,13 +354,13 @@
       </div>
     </a>
 
-    <a href="content/qa.html">
+    <a href="qa.html">
       <div class="footer-part">
         <i class="fas fa-chevron-right"></i>よくある質問
       </div>
     </a>
 
-    <a href="https://store.shopping.yahoo.co.jp/niimo/search.html">
+    <a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html">
       <div class="footer-part">
         <i class="fas fa-chevron-right"></i>商品一覧
       </div>
@@ -335,6 +371,10 @@
         <i class="fas fa-chevron-right"></i>お買い物かご
       </div>
     </a>
+
+    <div class="copyright">
+      <p>Copyright &copy; 2020 NiiMo All Right Reserved.</p>
+    </div>
   </div>
 
   <div class="footer-pc hidden-xs hidden-sm">
@@ -353,11 +393,11 @@
         </div>
 
         <div class="col-md-2">
-          <a href="content/qa.html"><i class="far fa-question-circle"></i>よくある質問</a>
+          <a href="qa.html"><i class="far fa-question-circle"></i>よくある質問</a>
         </div>
 
         <div class="col-md-2">
-          <a href="https://store.shopping.yahoo.co.jp/niimo/search.html"><i class="fas fa-list-ul"></i>商品一覧</a>
+          <a href="https://store.shopping.yahoo.co.jp/ep-naire/search.html"><i class="fas fa-list-ul"></i>商品一覧</a>
         </div>
 
         <div class="col-md-2">
@@ -365,11 +405,12 @@
         </div>
       </div>
     </div>
+
+    <div class="copyright">
+      <p>Copyright &copy; 2020 NiiMo All Right Reserved.</p>
+    </div>
   </div>
 
-  <div class="copyright">
-    <p>Copyright &copy; 2020 NiiMo All Right Reserved.</p>
-  </div>
 </footer>
 
 <div id="page_top"><a href="#menu"></a></div>
@@ -377,9 +418,9 @@
 <!-- bootstrap theme -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="../ftpsource/theme/white_pro-master/js/bootstrap.min.js"></script>
+<script src="../theme/white_pro-master/js/bootstrap.min.js"></script>
 
 <!-- hamburger navigation -->
-<script src="../ftpsource/js/nav.js"></script>
+<script src="../js/nav.js"></script>
 </body>
 </html>

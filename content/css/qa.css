@@ -23,6 +23,11 @@ a:hover {
     color: #333;
 }
 
+/* navbar highlight */
+.pc-header a[href="qa.html"] {
+  border-bottom: 4px solid #548859;
+}
+
 /* contents */
 article {
     padding-left: 10px;

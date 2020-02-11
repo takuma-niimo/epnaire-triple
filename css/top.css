@@ -161,6 +161,7 @@ footer a {
 
 footer a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 footer .contact {

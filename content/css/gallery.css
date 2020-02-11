@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 /* -------------------------------------
+navbar highlight
+------------------------------------- */
+.pc-header a[href="gallery.html"] {
+  border-bottom: 4px solid #548859;
+}
+
+/* -------------------------------------
 keyvisual
 ------------------------------------- */
 .keyvisual p {
@@ -14,6 +21,16 @@ keyvisual
   left: calc(50% - 125px / 2);
   font-weight: bold;
   font-size: 22px;
+}
+
+@media (min-width: 992px) {
+  .keyvisual p {
+    width: 300px;
+    line-height: 120px;
+    font-size: 32px;
+    bottom: calc(50% - 120px / 2);
+    left: calc(50% - 300px / 2);
+  }
 }
 
 /* -------------------------------------

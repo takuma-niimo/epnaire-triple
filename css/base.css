@@ -33,4 +33,11 @@ button:focus-visible {
 
 a[href="#"]>* {
   outline: 1px dashed pink;
+  display: none;
+}
+
+.row {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
